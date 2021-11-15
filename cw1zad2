@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<style>
+tr,td,table{border: 1px solid black;}
+</style>
+<body>
+
+<table>
+<tbody>
+
+  <?php
+
+$naglowki=array("nag1"=>"kol1","nag2"=>"kol2","nag3"=>"kol3");
+foreach($naglowki as $x => $val){
+echo "<td>$val</td>";
+}
+
+for($i=0;$i<10;$i++){
+	$r1=rand(1,10);
+	$r2=rand(40,99);
+	$null="Null";
+echo "<tr><td>$r1</td>
+	  <td>$r2</td>
+      <td>$null</td></tr>";
+}
+?>
+</tbody>
+</table>
+
+</body>
+</html>
